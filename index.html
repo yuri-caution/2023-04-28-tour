@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/common.css">
+    
 </head>
 <body>
     <div class="wrap">
@@ -18,6 +20,7 @@
                 <li><a href="#x">Service</a></li>
             </ul>
             <div class="user"><img src="./images/user.png" alt=""></div>
+            <div class="bars"><i class="xi-bars"></i></div>
         </div>
         <div class="hero">
             <div class="bg"></div>
@@ -36,5 +39,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const bars = document.querySelector('.bars i')
+        const gnb = document.querySelector('.gnb')
+
+        bars.addEventListener('click', function(){
+            gnb.classList.toggle('active')
+            bars.classList.toggle('xi-arrow-right')
+        })
+        
+    </script>
 </body>
 </html>
